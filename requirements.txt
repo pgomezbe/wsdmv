@@ -1,0 +1,9 @@
+graphviz
+notebook
+jupyterlab
+pandas
+matplotlib
+numpy
+seaborn
+setuptools
+statsmodels
