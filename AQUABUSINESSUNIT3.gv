@@ -1,0 +1,170 @@
+digraph AQUABUSINESSUNIT3 {
+	rankdir=LR splines=ortho
+	labelloc=t
+	label="\nData Model of AQUA Business Unit by Data Team"
+	fontsize=14
+	fontcolor=blue
+	subgraph cluster1 {
+		color="#00129A"
+		labelloc=b
+		label="METADATA COLUMNs"
+		fontsize=8
+		fontcolor="#00129A"
+		subgraph cluster2 {
+			ref_12c [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD><FONT POINT-SIZE="10">wert</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">bez</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">sg</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">fr</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">ru</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">us</FONT></TD></TR>                   
+                      </TABLE>> color="#00A2E8" fontcolor="#00A2E8" shape=plaintext]
+			color="#00A2E8"
+			labelloc=b
+			label=Shipment
+			fontsize=8
+			fontcolor="#00A2E8"
+		}
+		subgraph cluster3 {
+			ref_6c [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD><FONT POINT-SIZE="10">dwh_id</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">dwh_cr_load_id</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">dwh_up_load_id</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">dwh_status</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">dwh_valid_from</FONT></TD></TR>
+                        <TR><TD><FONT POINT-SIZE="10">dwh_valid_to</FONT></TD></TR>                  
+                      </TABLE>> color="#FF0000" fontcolor="#FF0000" shape=plaintext]
+			color="#FF0000"
+			labelloc=b
+			label="Oracle DWH"
+			fontsize=8
+			fontcolor="#FF0000"
+		}
+	}
+	subgraph cluster4 {
+		cc_kdbuch_stf_zahlplan [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                      <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">kdbuch...</FONT></TD></TR>
+                      <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">diadem...</FONT></TD></TR>      
+                      </TABLE>> color="#FFC90E" fontcolor="#FFC90E" shape=plaintext]
+		color="#FFC90E"
+		labelloc=b
+		label="BILLING TABLES"
+		fontsize=8
+		fontcolor="#FFC90E"
+	}
+	subgraph cluster5 {
+		color="#22B14C"
+		labelloc=b
+		label="BUSINESS FOUNDATION"
+		fontsize=8
+		fontcolor="#22B14C"
+		cc_art [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_art</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">art_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_qmauspruefprot [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_qmauspruefprot</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_emailreportticket [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_emailreportticket</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">ticket_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+	}
+	subgraph cluster6 {
+		color="#EA3FF7"
+		labelloc=b
+		label="AQUA APP"
+		fontsize=8
+		fontcolor="#EA3FF7"
+		cc_aqualgwaeingpos [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aqualgwaeingpos</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">art_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aqualgwaeing [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aqualgwaeing</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">waeingnr</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmwaeing [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmwaeing</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmwaeing_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmwaeingpos [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmwaeingpos</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmwaeingpos_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmklaerfall [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmklaerfall</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmklaerfall_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmreklamation [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmreklamation</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmreklamation_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aqualgsendung [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aqualgsendung</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">sendungsnr</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aqualgsendungpos [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aqualgsendungpos</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">sendungsnr</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmmangel [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmmangel</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmmangel_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmmasstab [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmmasstab</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmmasstab_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmnabfirma [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmnabfirma</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmnabfirma_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmpruefer [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmpruefer</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmpruefer_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmqzahl [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmqzahl</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmqzahl_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmtextbaustein [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmtextbaustein</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+		cc_aquaqmweprio [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10"><B>cc_aquaqmweprio</B></FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="10">qmweprio_id</FONT></TD></TR>
+                </TABLE>> shape=plaintext]
+	}
+	ref_12c -> ref_6c [headlabel=""]
+	ref_6c -> cc_art [headlabel=""]
+	cc_art -> cc_aqualgwaeingpos [headlabel=""]
+	cc_art -> cc_aqualgwaeing [headlabel=""]
+	cc_art -> cc_aquaqmwaeing [headlabel=""]
+	cc_art -> cc_aqualgsendungpos [headlabel=""]
+	cc_art -> cc_aqualgsendung [headlabel=""]
+	ref_12c -> cc_aqualgwaeingpos [headlabel=""]
+	ref_12c -> cc_aqualgwaeing [headlabel=""]
+	ref_12c -> cc_aqualgsendungpos [headlabel=""]
+	ref_12c -> cc_aqualgsendung [headlabel=""]
+	cc_art -> cc_aquaqmweprio [headlabel=""]
+	cc_aquaqmwaeing -> cc_aquaqmklaerfall [headlabel=""]
+	cc_aquaqmwaeing -> cc_aquaqmwaeingpos [headlabel=""]
+	ref_6c -> cc_qmauspruefprot [headlabel=""]
+	cc_qmauspruefprot -> cc_aquaqmmangel [headlabel=""]
+	cc_aquaqmklaerfall -> cc_aquaqmmangel [headlabel=""]
+	cc_qmauspruefprot -> cc_aquaqmnabfirma [headlabel=""]
+	cc_aquaqmwaeingpos -> cc_aquaqmmasstab [headlabel=""]
+	ref_6c -> cc_emailreportticket [headlabel=""]
+	cc_emailreportticket -> cc_kdbuch_stf_zahlplan [headlabel=""]
+	cc_emailreportticket -> cc_aqualgsendung [headlabel=""]
+	cc_emailreportticket -> cc_aqualgsendungpos [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmklaerfall [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmreklamation [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmmasstab [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmpruefer [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmqzahl [headlabel=""]
+	cc_emailreportticket -> cc_aquaqmtextbaustein [headlabel=""]
+}
