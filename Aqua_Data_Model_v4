@@ -1,7 +1,7 @@
 digraph AQUABUSINESSUNIT4 {
 	rankdir=TB splines=ortho
 	labelloc=t
-	label="\nData Model of AQUA Business Unit by Data Team"
+	label="\nDATA MODEL OF AQUA"
 	fontsize=6
 	fontcolor=blue
 	Legend [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
