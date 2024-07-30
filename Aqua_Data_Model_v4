@@ -1,13 +1,9 @@
 digraph AQUABUSINESSUNIT4 {
-	rankdir=TB splines=ortho
+	rankdir=LR splines=ortho
 	labelloc=t
 	label="\nDATA MODEL OF AQUA"
 	fontsize=6
 	fontcolor=blue
-	Legend [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
-                        <TR><TD><FONT POINT-SIZE="6" COLOR="#ED1C24">Primary Key</FONT></TD></TR>
-                        <TR><TD><FONT POINT-SIZE="6" COLOR="#22B14C">Foreign Key</FONT></TD></TR>
-                      </TABLE>> shape=plaintext]
 	cc_aqualgsendungpos [label=<<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
                     <TR><TD COLSPAN="2"><FONT POINT-SIZE="6"><B>cc_aqualgsendungpos</B></FONT></TD></TR>
                     <TR><TD COLSPAN="2" COLOR="#ED1C24"><FONT POINT-SIZE="6" COLOR="#ED1C24">dwh_id:number(22)</FONT></TD></TR>
